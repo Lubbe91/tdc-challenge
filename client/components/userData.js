@@ -15,7 +15,7 @@ export default class Users extends React.Component {
     }
   render() {
     return (
-            <tr onClick={() => this.handleClick()}>
+            <tr className="trStyle" onClick={() => this.handleClick()}>
                 <td className="name">{this.props.data.name}</td>
                 <td className="user">{this.props.data.username}</td>
                 <td className="email">{this.props.data.email}</td>

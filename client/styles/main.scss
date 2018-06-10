@@ -1,10 +1,32 @@
 // Styles goes here..
 body {
     width:100%;
-    height: 100%;
+    height: 90%;
     margin: 0;
-    background: #0f3026;
     font-family: lft_etica,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url("https://tv.yousee.dk/47efde27bfa3f0940d6ee6899f9c725e.jpg");
+  }
+  #header {
+      width: 100%;
+      margin-top:0px;
+      color:white;
+      background-color: rgb(0,29,20);
+  }
+  .headerStyle {
+      width:100%;
+      height:45px;
+      font-size:35px;
+      font-weight: bold;
+      text-align: center;
+      letter-spacing: -5px;
+  }
+  .headerStyle p {
+      padding:0 0 0 0;
+      margin: 0px;
+}
+  table {
+    height: 100%;
+    width: 100%;
   }
   td, th {
     text-align: left;
@@ -15,18 +37,23 @@ body {
       color:#3cb84d;
   }
   td {
+      margin:0px;
+      padding: 0px;
       font-size: 12px;
       color:white;
   }
   tr {
-      height: 35px;
+      height: 30px;
+      width: 100%;
   }
-  .header {
+  .trHeader {
       height: 35px;
   }
   table {
       width: 100%;
       height:100%;
+      background-color: rgb(0,29,20);
+      opacity: 0.9;
   }
   .moreInfo {
       text-decoration: underline;
@@ -37,11 +64,10 @@ body {
   #footer {
       width: 100%;
       bottom:0;
-      font-size: 25px;
       color:white;
       text-align: center;
       background-color: #484848;
-      position: absolute;
+      position: fixed;
   }
 @media (min-width: 350px) {
     th, .loading {
@@ -50,18 +76,34 @@ body {
     td {
         font-size: 14px;
     }
-    .header {
+    tr {
+        height:17px;
+    }
+    .trHeader {
         height: 50px;
     }
 }
-@media (min-width: 569px) {
+@media (min-height: 568px) {
+    td{
+        height:40px;
+    }
+}
+@media (min-height: 667px) {
+    tr {
+        height:40px;
+    }
+}
+@media (min-width: 568px) {
     th, .loading {
         font-size:20px;
     }
-    tr {
-        height: 30px;
+    td {
+        font-size: 14px;
     }
-    .header {
+    tr {
+        height: 22px;
+    }
+    .trHeader {
         height: 40px;
     }
     .email{
@@ -72,10 +114,22 @@ body {
     }
 }
 @media (min-width: 768px) {
+    #header {
+        width: 100%;
+        height:105px;
+        margin-bottom:0;
+    }
+    #header p {
+        font-size: 55px;
+        padding: 15px 0 0 0;
+    }
     tr {
         height: 30px;
     }
-    .header {
+    td {
+        font-size: 16px;
+    }
+    .trHeader {
         height: 40px;
     }
     .email, .link, .moreInfo{
@@ -86,14 +140,39 @@ body {
     }
 }
 @media (min-width: 1024px) {
+    #header {
+        width: 100%;
+        height:105px;
+        margin-bottom:0;
+    }
+    #header p {
+        font-size: 55px;
+        padding: 15px 0 0 0;
+    }
     .company, .email, .link, .moreInfo{
         display:table-cell;
     }
     .user, {
         display:none;
     }
+    th, .loading {
+        font-size:25px;
+    }
+    tr {
+        height: 55px;
+    }
+    td {
+        font-size: 18px;
+    }
 }
 @media (min-width: 1336px) {
+    #header {
+        height: 140px;
+        margin-bottom:3%;
+    }
+    #header p {
+        padding: 25px 0 0 0;
+    }
     .user, .company, .email, .link, .moreInfo{
         display:table-cell;
     }

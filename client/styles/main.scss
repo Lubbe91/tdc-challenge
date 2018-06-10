@@ -1,5 +1,8 @@
 // Styles goes here..
 body {
+    width:100%;
+    height: 100%;
+    margin: 0;
     background: #0f3026;
     font-family: lft_etica,"Helvetica Neue",Helvetica,Arial,sans-serif;
   }
@@ -30,6 +33,14 @@ body {
   }
   .user, .email, .company, .link, .moreInfo{
       display:none;
+  }
+  #footer {
+      width: 100%;
+      bottom:0;
+      font-size: 25px;
+      color: #3cb84d;
+      background-color: black;
+      position: absolute;
   }
 @media (min-width: 350px) {
     th, .loading {
